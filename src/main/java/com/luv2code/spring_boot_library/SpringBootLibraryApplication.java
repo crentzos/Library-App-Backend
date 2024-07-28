@@ -1,5 +1,6 @@
 package com.luv2code.spring_boot_library;
 
+import com.luv2code.spring_boot_library.controller.BookController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -9,5 +10,4 @@ public class SpringBootLibraryApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootLibraryApplication.class, args);
 	}
-
 }
