@@ -1,7 +1,7 @@
 package com.luv2code.spring_boot_library.service;
 
 import com.luv2code.spring_boot_library.dao.MessageRepository;
-import com.luv2code.spring_boot_library.entity.AdminQuestionRequest;
+import com.luv2code.spring_boot_library.requestmodels.AdminQuestionRequest;
 import com.luv2code.spring_boot_library.entity.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
 package com.luv2code.spring_boot_library.controller;
 
-import com.luv2code.spring_boot_library.entity.AdminQuestionRequest;
+import com.luv2code.spring_boot_library.requestmodels.AdminQuestionRequest;
 import com.luv2code.spring_boot_library.entity.Message;
 import com.luv2code.spring_boot_library.service.MessagesService;
 import com.luv2code.spring_boot_library.utils.ExtractJWT;
