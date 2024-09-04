@@ -11,7 +11,11 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 
 @Configuration
 public class MyDataRestConfig implements RepositoryRestConfigurer {
-    private String theAllowedOrigins = "https://localhost:3000";
+
+    private final String[] allowedOrigins = {
+            "https://graceful-trifle-6c3656.netlify.app",
+            "https://localhost:3000"
+    };
 
     @Override
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config, CorsRegistry cors) {
@@ -33,9 +37,9 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
         disableHttpMethods(Message.class, config, theUnsupportedActions);
 
         /* Configure CORS Mapping */
-        /* Had to mannually set all headers to be allowed */
+        /* Had to manually set all headers to be allowed */
         cors.addMapping(config.getBasePath() + "/**")
-                .allowedOrigins(theAllowedOrigins)
+                .allowedOrigins(allowedOrigins)
                 .allowedHeaders("*");
     }
 
