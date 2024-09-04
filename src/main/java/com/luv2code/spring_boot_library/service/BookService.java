@@ -12,7 +12,6 @@ import com.luv2code.spring_boot_library.responsemodels.ShelfCurrentLoansResponse
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.sound.midi.Soundbank;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -20,6 +19,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.TimeUnit;
 import java.util.Date;
+
 
 @Service
 @Transactional
@@ -31,6 +31,8 @@ public class BookService {
     private HistoryRepository historyRepository;
 
     private PaymentRepository paymentRepository;
+
+
 
     public BookService(BookRepository bookRepository, CheckoutRepository checkoutRepository,
     HistoryRepository historyRepository, PaymentRepository paymentRepository) {
