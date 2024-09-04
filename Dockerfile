@@ -3,6 +3,6 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 FROM openjdk:17-slim
-COPY --from=build /target/spring-boot-library-0.0.1-SNAPSHOT spring-boot-library.jar
-EXPOSE 8080
+COPY --from=build /target/spring-boot-library-0.0.1-SNAPSHOT.jar spring-boot-library.jar
+EXPOSE 8443
 ENTRYPOINT [ "java", "-jar", "spring-boot-library.jar" ]
