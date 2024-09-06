@@ -7,7 +7,7 @@ import com.luv2code.spring_boot_library.utils.ExtractJWT;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = {"https://localhost:3000","https://library-app-frontend.onrender.com"})
+@CrossOrigin(origins = {"https://localhost:3000","https://master--my-react-library-app.netlify.app"})
 @RestController
 @RequestMapping("/api/messages")
 public class MessagesController {
