@@ -13,7 +13,7 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 public class MyDataRestConfig implements RepositoryRestConfigurer {
 
     private final String[] allowedOrigins = {
-            "https://graceful-trifle-6c3656.netlify.app",
+            "https://library-app-frontend.onrender.com",
             "https://localhost:3000"
     };
 
