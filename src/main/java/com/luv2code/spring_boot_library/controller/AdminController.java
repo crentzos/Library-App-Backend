@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 
-@CrossOrigin(origins = {"https://localhost:3000","https://master--my-react-library-app.netlify.app", "*"})
+@CrossOrigin(origins = {"https://localhost:3000","https://master--my-react-library-app.netlify.app"})
 @RestController
 @RequestMapping("/api/admin")
 public class AdminController {
