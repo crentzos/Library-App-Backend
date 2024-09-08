@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 
-@CrossOrigin(origins = {"https://localhost:3000","https://master--my-react-library-app.netlify.app"})
 @RestController
 @RequestMapping("/api/books")
 public class BookController {
