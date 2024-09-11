@@ -29,9 +29,9 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
 
         // CORS configuration - Allow only the Netlify production frontend
         cors.addMapping("/**")
-                .allowedOrigins("https://master--my-react-library-app.netlify.app")  // Only allow Netlify production URL
+                .allowedOrigins("https://my-react-library-app.netlify.app", "http://localhost:3000")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                .allowedHeaders("*")
+                .allowedHeaders("Content-Type", "Authorization", "Accept", "X-Requested-With")
                 .allowCredentials(true);
     }
 
