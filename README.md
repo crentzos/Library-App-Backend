@@ -1,7 +1,7 @@
 # React Library App - Back-End
 
-The **React Library App - Back-End** is a Spring Boot service that powers the full-stack **Library System**. It handles book management, user authentication, loan processing, review handling, and payment 
-integration. The app was developed using **MySQL** in the development environment and uses **PostgreSQL** in the production environment hosted on Render.
+The **React Library App - Back-End** is a Spring Boot service that powers the full-stack **Library System**. It handles book management, user authentication, 
+loan processing, review handling, and payment integration. The app was developed using **MySQL** in the development environment and uses **PostgreSQL** in the production environment hosted on Render.
 
 This project connects to the **React** front-end application and integrates with external services like **Okta** for authentication and **Stripe** for payment processing.
 
@@ -37,11 +37,12 @@ This project connects to the **React** front-end application and integrates with
 - **Stripe**: Payment processing.
 - **Render**: Used for deployment.
 
-To set up and run the back-end service locally, follow these steps: 
+## How to Run the Project Locally
 
-1. Clone the Repository: 
-git clone https://github.com/crentzos/Library-App-Backend.git 
-cd Library-App-Backend
+To set up and run the React Library App on your local machine, follow these steps: 
 
-2. Set Up MySQL Database: Ensure you have MySQL installed locally. Use the MySQL scripts located in the Scripts folder to set up the database schema. Scripts handle all the necessary queries including database
-creation.
+1. Clone the Repository: git clone https://github.com/crentzos/Library-App-Backend.git and cd Library-App-Backend.
+
+2. Install Dependencies: Make sure you have Java Development Kit (JDK) installed. Then, you can use Maven to install the project’s dependencies: Run mvn install
+
+3. Start the Application: Run mvn spring-boot:run
