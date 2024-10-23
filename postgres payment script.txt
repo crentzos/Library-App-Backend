@@ -1,7 +1,0 @@
-DROP TABLE IF EXISTS payment;
-
-CREATE TABLE payment (
-    id SERIAL PRIMARY KEY,
-    user_email VARCHAR(45),
-    amount NUMERIC(10,2)
-);
