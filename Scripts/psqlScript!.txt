@@ -1,6 +1,3 @@
--- Disable foreign key checks and unique checks are not needed in PostgreSQL
--- Disable SQL_MODE, SQL_NOTES, etc. aren't needed in PostgreSQL either
-
 -- Drop the `book` table if it exists
 DROP TABLE IF EXISTS book;
 
